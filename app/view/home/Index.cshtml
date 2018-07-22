@@ -1,0 +1,116 @@
+﻿@{ ViewBag.Title = "Home"; }
+
+@*<div class="wrapper wrapper-content animated fadeInRight" ng-app="app" ng-controller="homeCtrl" ng-cloak>*@
+<div class="wrapper wrapper-content animated fadeInRight">
+    @*<div ng-if="DataStatus == 'Loading'" class="sk-spinner sk-spinner-three-bounce"><div class="sk-bounce1"></div><div class="sk-bounce2"></div><div class="sk-bounce3"></div></div>*@
+
+    @*<div ng-if="DataStatus == 'Loaded'">*@
+    <div>
+        <div class="row">
+            <h3>Employee Workspace</h3>
+        </div>
+        <div>
+            <home-app>Loading Angular2...</home-app>  
+        </div>
+        @*<div class="row">
+                <div class="col-lg-3 col-md-4" role="button" ng-click="NavigateToCustomerSearch()">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Customers</h3>
+                            <span><a href="{{'Customer/CustomerSearch/'}}"><i uib-tooltip="Navigate To Customer Search" class="fa fa-search-plus pull-right" role="button" style="font-size:15px;color:chartreuse;" aria-hidden="true"></i></a></span>
+                            <small>My Customers: {{User.RelatedCustomers.Customers.length}}</small><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-click="NavigateToPricingChanges()">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Pricing</h3>
+                            <small>Outstanding Changes: {{Model.CustomerPriceChangesCount}}</small>
+                            <small class="pull-right badge badge-danger" ng-show="Model.CustomerPriceRejectedCount > 0">Rejected Changes: {{Model.CustomerPriceRejectedCount}}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-click="NavigateToPricingApprovals()" ng-if="User.HasContractPricingAdmin">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Pricing Approvals</h3>
+                            <small>Outstanding Changes: {{Model.CustomerPriceSubmittedCount}}</small><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasPublicHoliday" ng-click="NavigateTo('@Url.Action("Index", "PublicHoliday")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Public Holidays</h3>
+                            <small>Manage public holidays</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasUserManagement" ng-click="NavigateTo('@Url.Action("Index", "User")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Users and Roles</h3>
+                            <small>Manage application users and roles</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasUserManagement" ng-click="NavigateTo('@Url.Action("Index", "Product")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Products</h3>
+                            <small>Manage products</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasUserManagement" ng-click="NavigateTo('@Url.Action("Index", "HPV")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>HPV</h3>
+                            <small>Manage HPV</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasManagingRebate || User.HasRebateReports" ng-click="NavigateTo('@Url.Action("Index", "CustomerRebate")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Customer Rebates</h3>
+                            <small>Manage Customer Rebates</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-click="NavigateTo('@Url.Action("Index", "SupplierRebate")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Supplier Rebates</h3>
+                            <small>Manage Supplier Rebates</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasManagingSuppliers" ng-click="NavigateTo('@Url.Action("Index", "Supplier")')">
+                    <div class="widget no-padding navy-bg">
+                        <div class="p-m">
+                            <h3>Suppliers</h3>
+                            <small>Manage Suppliers</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasInventoryManagement" ng-click="NavigateTo('@Url.Action("Index", "Inventory")')">
+                    <div class="widget no-padding lazur-bg">
+                        <div class="p-m">
+                            <h3>Inventory Management</h3>
+                            <small>Managing Inventory</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4" role="button" ng-if="User.HasUserManagement" ng-click="NavigateTo('@Url.Action("Index", "SystemSettings")')">
+                    <div class="widget no-padding lazur-bg">
+                        <div class="p-m">
+                            <h3>System Settings</h3>
+                            <small>System Configuration</small>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+    </div>
+</div>
